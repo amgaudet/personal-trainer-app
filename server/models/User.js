@@ -21,6 +21,10 @@ const userSchema = new Schema({
   },
   cardio: [
     {
+      date: {
+        type: Date,
+        required: true
+      },
       duration: {
         type: String,
         required: true,
@@ -39,6 +43,10 @@ const userSchema = new Schema({
   ],
   resistance: [
     {
+      date: {
+        type: Date,
+        required: true
+      },
       exercise: {
         type: String,
         required: true,

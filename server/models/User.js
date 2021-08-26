@@ -38,6 +38,10 @@ const userSchema = new Schema({
       },
       comments: {
         type: String
+      },
+      completed: {
+        type: Boolean,
+        required: true
       }
     }
   ],
@@ -45,7 +49,6 @@ const userSchema = new Schema({
     {
       date: {
         type: Date,
-        required: true
       },
       exercise: {
         type: String,
@@ -59,11 +62,19 @@ const userSchema = new Schema({
         type: Number,
         required: true,
       },
+      newWeight: {
+        type: Number,
+        required: true,
+      },
       restInterval: {
         type: Number,
       },
       comments: {
         type: String
+      },
+      completed: {
+        type: Boolean,
+        required: true
       }
     }
   ]
